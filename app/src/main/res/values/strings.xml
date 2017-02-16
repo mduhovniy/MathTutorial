@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MathTutorial</string>
+    <string name="tutorial_not_fetched_yet">Tutorial not fetched yet</string>
+    <string name="fetch_tutorial">Fetch Tutorial</string>
+</resources>
