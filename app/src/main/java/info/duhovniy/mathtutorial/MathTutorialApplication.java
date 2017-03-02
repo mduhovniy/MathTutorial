@@ -6,7 +6,8 @@ import android.support.annotation.NonNull;
 
 import info.duhovniy.mathtutorial.model.DataModel;
 import info.duhovniy.mathtutorial.model.MainDataModel;
-import info.duhovniy.mathtutorial.model.SchedulerProvider;
+import info.duhovniy.mathtutorial.schedulers.RealSchedulerProvider;
+import info.duhovniy.mathtutorial.schedulers.SchedulerProvider;
 import info.duhovniy.mathtutorial.viewmodel.MainViewModel;
 
 public class MathTutorialApplication extends Application {
@@ -25,7 +26,7 @@ public class MathTutorialApplication extends Application {
 
     @NonNull
     public SchedulerProvider getSchedulerProvider() {
-        return SchedulerProvider.getInstance();
+        return RealSchedulerProvider.getInstance();
     }
 
     @NonNull
