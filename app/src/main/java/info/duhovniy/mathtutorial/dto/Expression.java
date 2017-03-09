@@ -8,22 +8,22 @@ import lombok.Value;
 @Value
 public class Expression {
 
-    String id;
+    private String id;
 
-    String levelName;
+    private String levelName;
 
-    int rating;
+    private int rating;
 
     // time limit for solution
-    int maxTimeInSeconds;
+    private int maxTimeInSeconds;
 
     // Expression Pattern
-    List<String> body;
+    private List<String> body;
 
-    int min;
-    int max;
+    private int min;
+    private int max;
     // Number of digits after dot, NULL == 0
-    int rank;
+    private int rank;
     // Temporary field for result of evaluated expression to verify on client
-    double tempResult;
+    private double tempResult;
 }
